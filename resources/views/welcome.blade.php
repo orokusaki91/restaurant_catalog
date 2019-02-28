@@ -4,12 +4,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
-        {{-- <link rel="stylesheet" href="{{ asset('css/app.css?ver=' . time()) }}"> --}}
+        <link rel="stylesheet" href="{{ asset('css/app.css?ver=' . time()) }}">
     </head>
     <body>
     	<div id="app">
-    		<p>works</p>
+    		<example-component></example-component>
     	</div>
-        {{-- <script src="{{ asset('js/app.js?ver=' . time()) }}"></script> --}}
+        <script src="{{ asset('js/app.js?ver=' . time()) }}"></script>
     </body>
 </html>
