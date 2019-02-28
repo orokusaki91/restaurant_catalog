@@ -7,6 +7,9 @@
         <link rel="stylesheet" href="{{ asset('css/app.css?ver=' . time()) }}">
     </head>
     <body>
+    	<div id="app">
+    		<example-component></example-component>
+    	</div>
         <script src="{{ asset('js/app.js?ver=' . time()) }}"></script>
     </body>
 </html>
