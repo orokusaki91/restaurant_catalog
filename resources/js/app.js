@@ -19,7 +19,16 @@ window.Vue = require('vue');
 // const files = require.context('./', true, /\.vue$/i);
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
 
+Vue.component('app', require('./components/App.vue').default);
 Vue.component('header-component', require('./components/HeaderComponent.vue').default);
+
+
+
+/**
+ * import vue full page plugin and use it within vue instance
+ */
+import VueFullPage from 'vue-fullpage.js'
+Vue.use(VueFullPage);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to

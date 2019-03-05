@@ -5,49 +5,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link rel="stylesheet" href="{{ asset('css/fullpage.min.css') }}">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://unpkg.com/fullpage.js/dist/fullpage.min.css">
     <link rel="stylesheet" href="{{ asset('css/app.css?ver=' . time()) }}">
 </head>
 
 <body>
     <div id="app">
-        <header-component></header-component>
-        <div id="fullpage">
-            <div class="section">
-                Ivan
-            </div>
-            <div class="section">
-                a
-            </div>
-            <div class="section">
-            </div>
-            <div class="section">
-            </div>
-            <div class="section">
-            </div>
-        </div>
+        <app></app>
     </div>
-    <script src="{{ asset('js/jquery-3.3.1.min.js') }}"></script>
-    <script src="{{ asset('js/jquery-ui.js') }}"></script>
-    <script src="{{ asset('js/scrolloverflow.min.js') }}"></script>
-    <script src="{{ asset('js/fullpage.min.js') }}"></script>
-    <script src="{{ asset('js/fullpage.extensions.min.js') }}"></script>
+    {{-- <script src="{{ asset('js/jquery-ui.js') }}"></script> --}}
     <script src="{{ asset('js/app.js?ver=' . time()) }}"></script>
-    <script>
-        new fullpage('#fullpage', {
-            //options here
-            // licenseKey: 'xxxxxxxx-xxxxxxxx-xxxxxxxx-xxxxxxxx',
-            autoScrolling: true,
-            scrollHorizontally: true,
-            scrollingSpeed: 1000,
-            // scrollBar: true,
-            scrollOverflow: true,
-            css3: true
-        });
 
-        //methods
-        fullpage_api.setAllowScrolling(false);
-    </script>
+    <script src="{{ asset('js/jquery-3.3.1.min.js') }}"></script>
+    <script src="https://unpkg.com/vue-fullpage.js/dist/vue-fullpage.min.js"></script>
 </body>
 
 </html>
