@@ -20,7 +20,7 @@ window.Vue = require('vue');
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
 
 Vue.component('app', require('./components/App.vue').default);
-Vue.component('header-component', require('./components/HeaderComponent.vue').default);
+Vue.component('app-header', require('./components/Header.vue').default);
 
 
 

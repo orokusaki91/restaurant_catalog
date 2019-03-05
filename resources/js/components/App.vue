@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<header-component></header-component>
+		<app-header></app-header>
 
 		<full-page id="fullpage" :options="options" ref="fullpage">
 			<div class="section">
