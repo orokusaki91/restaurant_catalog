@@ -1,26 +1,43 @@
 <template>
-    <header class="fixed">
+    <header class="fixed pt-4">
         <div class="row align-items-center">
-            <div class="col-md-2"></div>
+            <div class="col-md-2">
+                <a href="javascript:void(0)" class="logo">
+                    <img :src="image" :alt="image" title="Logo" />
+                    Logo
+                </a>
+            </div>
             <div class="col-md-10 text-right">
-                <ul>
+                <ul v-scroll-spy-active="{selector: 'li'}" v-scroll-spy-link="{selector: 'a'}">
                     <li>
-                        <a href="javascript:void(0)">Home</a>
+                        <a href="#home">
+                            Home
+                        </a>
                     </li>
                     <li>
-                        <a href="javascript:void(0)">About us</a>
+                        <a href="#aboutUs">
+                            About us
+                        </a>
                     </li>
                     <li>
-                        <a href="javascript:void(0)">Menu</a>
+                        <a href="#menu">
+                            Menu
+                        </a>
                     </li>
                     <li>
-                        <a href="javascript:void(0)">This week</a>
+                        <a href="#thisWeek">
+                            This week
+                        </a>
                     </li>
                     <li>
-                        <a href="javascript:void(0)">Gallery</a>
+                        <a href="#gallery">
+                            Gallery
+                        </a>
                     </li>
                     <li>
-                        <a href="javascript:void(0)">Contact</a>
+                        <a href="#contact">
+                            Contact
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -30,6 +47,10 @@
 
 <script>
     export default {
-
-    }
+        data() {
+            return {
+                image: 'img/logo.png'
+            }
+        }
+    };
 </script>
