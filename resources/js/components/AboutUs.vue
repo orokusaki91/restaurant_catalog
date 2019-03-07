@@ -1,5 +1,5 @@
 <template>
-    <div id="aboutUs" class="section">
+    <div id="aboutUs" class="section active">
         <div class="container-wrap">
             <div class="container-wrap-background">
                 <div class="container p-5">
@@ -22,10 +22,10 @@
                                 ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
                                 reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                             </p>
-                            <button class="btn">
+                            <button class="btn btn-readMore">
                                 Read more
                             </button>
-                            <button class="btn">
+                            <button class="btn btn-book">
                                 Book a table
                             </button>
                         </div>
@@ -33,6 +33,7 @@
                             <img :src="food" :alt="food" />
                         </div>
                     </div>
+                    <hr />
                 </div>
             </div>
         </div>
