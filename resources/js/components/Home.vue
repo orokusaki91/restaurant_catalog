@@ -1,5 +1,5 @@
 <template>
-    <div id="home" class="section">
+    <div id="home" class="section active">
         <div class="slide">
             <img src="img/slides/slide-1.jpg" alt="img/slides/slide-1.jpg" title="Slides 1" />
         </div>

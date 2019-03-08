@@ -1,5 +1,5 @@
 <template>
-    <div id="aboutUs" class="section active">
+    <div id="aboutUs" class="section">
         <div class="container-wrap">
             <div class="container-wrap-background">
                 <div class="container p-5">
